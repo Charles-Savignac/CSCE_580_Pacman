@@ -28,7 +28,6 @@ class ReflexAgent(Agent):
     headers.
     """
 
-
     def getAction(self, gameState):
         """
         You do not need to change this method, but you're welcome to.
@@ -353,11 +352,9 @@ def betterEvaluationFunction(currentGameState):
     
     capsule=currentGameState.getCapsules()
     
-    
     score = currentGameState.getScore()
     distFood=[]
     distCap=[]
-
     
     if newFood.asList():
         for food in newFood.asList():
@@ -380,19 +377,14 @@ def betterEvaluationFunction(currentGameState):
                 score -= 1000
             else:
                 score+=ghostDist
-            
-
     
     if capsule:
         for cap in capsule:
             distCap.append(manhattanDistance(pos, cap) )
         score += 200 / (min(distCap)+1)
         score+=10*len(capsule)
-    
-    
   
     return score
-    
 
 # Abbreviation
 better = betterEvaluationFunction
