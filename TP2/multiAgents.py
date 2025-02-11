@@ -70,28 +70,45 @@ class ReflexAgent(Agent):
         successorGameState = currentGameState.generatePacmanSuccessor(action)
         newPos = successorGameState.getPacmanPosition()
         newFood = currentGameState.getFood()
-        newGhostStates = successorGameState.getGhostStates()
+        newGhostStates = currentGameState.getGhostStates()
         newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
-
-        "*** YOUR CODE HERE ***"
-        newFoodPositions = newFood.asList()
-        newGhostPositions = [ghost.getPosition() for ghost in newGhostStates]
-        distanceToFood = []
-        distanceToGhost = []
-        score = 0
-
-        if newPos in newGhostPositions:
-            if newScaredTimes[newGhostPositions.index(newPos)]>0:
-                return 100
-            return -100
-
-        if newPos in newFoodPositions:
-            return 100
+     
+        capsule=currentGameState.getCapsules()
         
-        if action is Directions.STOP:
-            return -100
+        
+        "*** YOUR CODE HERE ***"
+        score = 0
+        distFood=[]
+        distCap=[]
 
-        return  0
+        
+        if newFood.asList():
+            for food in newFood.asList():
+                distFood.append(manhattanDistance(newPos, food))
+            
+            score += 100 / (min(distFood)+1)  
+
+        
+        for ghost in newGhostStates:
+            ghostPos = ghost.getPosition()
+            ghostDist = manhattanDistance(newPos, ghostPos)
+            if ghost.scaredTimer > 0:  
+                score += 200 / (ghostDist + 1)
+            else:  
+                if ghostDist < 2:  
+                    score -= 1000
+                
+
+        
+        if capsule:
+            for cap in capsule:
+                distCap.append(manhattanDistance(newPos, cap) )
+            score += 200 / (min(distCap)+1)  
+        
+        if action==Directions.STOP:
+            score-=100
+
+        return score
 
 def scoreEvaluationFunction(currentGameState):
     """
@@ -328,7 +345,54 @@ def betterEvaluationFunction(currentGameState):
     DESCRIPTION: <write something here so we know what you did>
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    
+    pos = currentGameState.getPacmanPosition()
+    newFood = currentGameState.getFood()
+    newGhostStates = currentGameState.getGhostStates()
+    newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
+    
+    capsule=currentGameState.getCapsules()
+    
+    
+    score = currentGameState.getScore()
+    distFood=[]
+    distCap=[]
+
+    
+    if newFood.asList():
+        for food in newFood.asList():
+            distFood.append(manhattanDistance(pos, food))
+        
+        score += 100 / (min(distFood)+1)
+        score-=10*currentGameState.getNumFood()
+        score+=min(distFood)
+
+    
+    for ghost in newGhostStates:
+        ghostPos = ghost.getPosition()
+        ghostDist = manhattanDistance(pos, ghostPos)
+        if ghost.scaredTimer > 0:  
+            score += 200 / (ghostDist + 1)
+            score+=ghost.scaredTimer
+            score-=ghostDist
+        else:  
+            if ghostDist < 2:  
+                score -= 1000
+            else:
+                score+=ghostDist
+            
+
+    
+    if capsule:
+        for cap in capsule:
+            distCap.append(manhattanDistance(pos, cap) )
+        score += 200 / (min(distCap)+1)
+        score+=10*len(capsule)
+    
+    
+  
+    return score
+    
 
 # Abbreviation
 better = betterEvaluationFunction
