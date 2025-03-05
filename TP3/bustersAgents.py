@@ -163,8 +163,8 @@ class GreedyBustersAgent(BustersAgent):
         closestGhost = ghostPositions[distancesToPacman.index(min(distancesToPacman))]
     
         for action in legal:
-            successorPosition = Actions.getSuccessor(pacmanPosition, action)
-            distance = self.distancer.getDistance(successorPosition, closestGhost)
+            successor = Actions.getSuccessor(pacmanPosition, action)
+            distance = self.distancer.getDistance(successor, closestGhost)
         
             if distance < bestDistance:
                 bestDistance = distance
