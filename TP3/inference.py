@@ -345,7 +345,18 @@ class ParticleFilter(InferenceModule):
         """
         self.particles = []
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+
+        particles = self.numParticles
+        size = len(self.legalPositions)
+        array = []
+
+        while particles > 0:
+            position = self.legalPositions[:min(particles, size)]
+            array.extend(position)
+            particles -= size if particles > size else particles
+
+        self.particles = array
+
 
     def observeUpdate(self, observation, gameState):
         """
@@ -379,7 +390,14 @@ class ParticleFilter(InferenceModule):
         This function should return a normalized distribution.
         """
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+        distribution = DiscreteDistribution()
+
+        for particle in self.particles:
+            distribution[particle] += 1
+
+        distribution.normalize()
+        return distribution
+    
 
 
 class JointParticleFilter(ParticleFilter):
