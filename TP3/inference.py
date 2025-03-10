@@ -371,7 +371,25 @@ class ParticleFilter(InferenceModule):
         the DiscreteDistribution may be useful.
         """
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+        pacman = gameState.getPacmanPosition()
+        jail = self.getJailPosition()
+
+        weight=DiscreteDistribution()
+
+        for particle in self.particles:
+            weight[particle]+=self.getObservationProb(observation, pacman, particle, jail)
+
+        if weight.total()==0:
+            self.initializeUniformly(gameState)
+            return
+
+        self.particles=[]
+        for _ in range(self.numParticles):
+            self.particles.append(weight.sample())
+
+
+
+
 
     def elapseTime(self, gameState):
         """
@@ -379,8 +397,13 @@ class ParticleFilter(InferenceModule):
         gameState.
         """
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+        tmp=[]
 
+        for particle in self.particles:
+            newPosDist = self.getPositionDistribution(gameState, particle)
+            tmp.append(newPosDist.sample())
+
+        self.particles=tmp
     def getBeliefDistribution(self):
         """
         Return the agent's current belief state, a distribution over ghost
@@ -425,7 +448,17 @@ class JointParticleFilter(ParticleFilter):
         """
         self.particles = []
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+        particles = self.numParticles
+
+        pos = list(itertools.product(self.legalPositions, repeat = self.numGhosts))
+        random.shuffle(pos)
+
+        while particles>0:
+            for position in pos:
+                if particles>0:
+                    self.particles.append(position)
+                    particles -= 1
+       
 
     def addGhostAgent(self, agent):
         """
@@ -458,7 +491,28 @@ class JointParticleFilter(ParticleFilter):
         the DiscreteDistribution may be useful.
         """
         "*** YOUR CODE HERE ***"
-        raiseNotDefined()
+        pacman = gameState.getPacmanPosition()
+        
+
+        weight=DiscreteDistribution()
+
+        for particle in self.particles:
+            prob=1
+            for i in range(self.numGhosts):
+                prob*=self.getObservationProb(observation[i], pacman, particle[i], self.getJailPosition(i))
+            weight[particle]+=prob
+
+        if weight.total()==0:
+            self.initializeUniformly(gameState)
+            return
+
+        self.particles=[]
+        for _ in range(self.numParticles):
+            self.particles.append(weight.sample())
+
+
+
+        
 
     def elapseTime(self, gameState):
         """
@@ -468,10 +522,13 @@ class JointParticleFilter(ParticleFilter):
         newParticles = []
         for oldParticle in self.particles:
             newParticle = list(oldParticle)  # A list of ghost positions
-
+            
             # now loop through and update each entry in newParticle...
             "*** YOUR CODE HERE ***"
-            raiseNotDefined()
+            for i in range(self.numGhosts):
+            
+                newPosDist = self.getPositionDistribution(gameState, newParticle, i, self.ghostAgents[i])
+                newParticle[i]=newPosDist.sample()
 
             """*** END YOUR CODE HERE ***"""
             newParticles.append(tuple(newParticle))
