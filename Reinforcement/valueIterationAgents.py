@@ -202,4 +202,56 @@ class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
 
     def runValueIteration(self):
         "*** YOUR CODE HERE ***"
+        states = self.mdp.getStates()
+        predecessors = {}
+        queue = util.PriorityQueue()
 
+        for state in states:
+            if state not in predecessors:
+                predecessors[state] = set()
+
+            for action in self.mdp.getPossibleActions(state):
+                for next_state, prob in self.mdp.getTransitionStatesAndProbs(state, action):
+                    if prob > 0:
+                        if next_state not in predecessors:
+                            predecessors[next_state] = set()
+
+                        predecessors[next_state].add(state)
+
+        for state in states:
+            if not self.mdp.isTerminal(state):
+                maxQValue = float('-inf')
+
+                for action in self.mdp.getPossibleActions(state):
+                    qValue = self.getQValue(state, action)
+                    maxQValue = max(maxQValue, qValue)
+                
+                diff = abs(self.values[state] - maxQValue)
+                queue.push(state, -diff)
+
+        for _ in range(self.iterations):
+            if queue.isEmpty():
+                break
+
+            state = queue.pop()
+
+            if not self.mdp.isTerminal(state):
+                maxQValue = float('-inf')
+                
+                for action in self.mdp.getPossibleActions(state):
+                    qValue = self.getQValue(state, action)
+                    maxQValue = max(maxQValue, qValue)
+
+                self.values[state] = maxQValue
+
+            for pred in predecessors[state]:
+                maxQValue = float('-inf')
+                
+                for action in self.mdp.getPossibleActions(pred):
+                    qValue = self.getQValue(pred, action)
+                    maxQValue = max(maxQValue, qValue)
+                
+                diff = abs(self.values[pred] - maxQValue)
+                
+                if diff > self.theta:
+                        queue.update(pred, -diff)
