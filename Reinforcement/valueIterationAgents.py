@@ -183,8 +183,6 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
             self.values = valueCopy
             index += 1
 
-
-
 class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
     """
         * Please read learningAgents.py before reading this.*
