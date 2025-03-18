@@ -62,6 +62,24 @@ class ValueIterationAgent(ValueEstimationAgent):
     def runValueIteration(self):
         # Write value iteration code here
         "*** YOUR CODE HERE ***"
+        for _ in range(self.iterations):
+            valueCopy=self.values.copy()
+            for state in self.mdp.getStates():
+
+                if self.mdp.isTerminal(state):
+                    continue
+
+                qValue=float('-inf')
+                for action in self.mdp.getPossibleActions(state):
+                    if self.getQValue(state,action)>qValue:
+                        qValue=self.getQValue(state,action)
+                        valueCopy[state]=qValue
+            self.values=valueCopy
+
+       
+
+
+                
 
 
     def getValue(self, state):
@@ -78,6 +96,12 @@ class ValueIterationAgent(ValueEstimationAgent):
         """
         "*** YOUR CODE HERE ***"
         values = self.values
+        qValue=0
+        for nextState, prob in self.mdp.getTransitionStatesAndProbs(state,action):
+            qValue+=prob*(self.mdp.getReward(state,action,nextState)+self.discount*self.getValue(nextState))
+        
+        return qValue
+
 
     def computeActionFromValues(self, state):
         """
@@ -90,10 +114,24 @@ class ValueIterationAgent(ValueEstimationAgent):
         """
         "*** YOUR CODE HERE ***"
         values = self.values
+       
+        maxValue=float('-inf')
+        bestAction=None
+     
+        if self.mdp.isTerminal(state):
+            return None
+        
+        
+        
+        for action in self.mdp.getPossibleActions(state):
+            
+            if self.getQValue(state,action) > maxValue:
+                bestAction=action
+                maxValue=self.getQValue(state,action)
+        
+        
+        return bestAction
 
-        for key in values.keys():
-            if key == "TERMINAL_STATE":
-                return None
 
 
     def getPolicy(self, state):
