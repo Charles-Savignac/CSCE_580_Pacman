@@ -164,23 +164,23 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
 
             valueCopy=self.values.copy()
 
-            if index > len(states):
+            if index >= len(states):
                 index = 0
 
             state = states[index]
 
             if self.mdp.isTerminal(state):
+                index += 1
                 continue
 
-            qValue=float('-inf')
+            maxQValue = float('-inf')
 
             for action in self.mdp.getPossibleActions(state):
-                if self.getQValue(state,action) > qValue:
-                    qValue=self.getQValue(state,action)
-                    valueCopy[state]=qValue
+                qValue = self.getQValue(state, action)
+                maxQValue = max(maxQValue, qValue)
 
-            self.values=valueCopy
-
+            valueCopy[state] = maxQValue
+            self.values = valueCopy
             index += 1
 
 
