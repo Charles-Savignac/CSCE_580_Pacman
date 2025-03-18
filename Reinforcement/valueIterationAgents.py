@@ -71,7 +71,7 @@ class ValueIterationAgent(ValueEstimationAgent):
 
                 qValue=float('-inf')
                 for action in self.mdp.getPossibleActions(state):
-                    if self.getQValue(state,action)>qValue:
+                    if self.getQValue(state,action) > qValue:
                         qValue=self.getQValue(state,action)
                         valueCopy[state]=qValue
             self.values=valueCopy
