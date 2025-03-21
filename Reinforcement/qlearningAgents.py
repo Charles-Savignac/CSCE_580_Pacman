@@ -197,13 +197,12 @@ class ApproximateQAgent(PacmanQAgent):
         """
         "*** YOUR CODE HERE ***"
         featureVector=self.featExtractor.getFeatures(state,action)
+
         for key in featureVector.keys():
-  
            featureVector[key]*=self.weights[key]
 
         self.Qvalue[(state,action)]=featureVector.totalCount()
         return self.Qvalue[(state,action)]
-        
 
     def update(self, state, action, nextState, reward):
         """
@@ -212,11 +211,9 @@ class ApproximateQAgent(PacmanQAgent):
         "*** YOUR CODE HERE ***"
         featureVector=self.featExtractor.getFeatures(state,action)
         diff=(reward+self.discount*self.getValue(nextState))-self.getQValue(state,action)
+
         for key in featureVector.keys():
-            
-            
             self.weights[key]+=self.alpha*diff*featureVector[key]
-          
 
     def final(self, state):
         "Called at the end of each game."
@@ -227,5 +224,3 @@ class ApproximateQAgent(PacmanQAgent):
         if self.episodesSoFar == self.numTraining:
             # you might want to print your weights here for debugging
             "*** YOUR CODE HERE ***"
-            print(self.weights)
-            input()
