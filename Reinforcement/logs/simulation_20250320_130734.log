@@ -1,0 +1,364 @@
+[2025-03-20 13:07:34.662] [MainThread] [INFO]: Démarrage de la journalisation - Fichier: logs\simulation_20250320_130734.log
+[2025-03-20 13:07:35.212] [MainThread] [INFO]: Création des threads passagers...
+[2025-03-20 13:07:35.216] [MainThread] [INFO]: Création des threads bus...
+[2025-03-20 13:07:35.217] [MainThread] [WARNING]: Bus 7: Arrêt actuel S1 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.219] [MainThread] [INFO]: Bus 7: Réinitialisé à l'arrêt S4
+[2025-03-20 13:07:35.220] [MainThread] [WARNING]: Bus 10: Arrêt actuel S5 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.226] [MainThread] [INFO]: Bus 10: Réinitialisé à l'arrêt S9
+[2025-03-20 13:07:35.227] [MainThread] [WARNING]: Bus 12: Arrêt actuel S16 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.230] [MainThread] [INFO]: Bus 12: Réinitialisé à l'arrêt S20
+[2025-03-20 13:07:35.232] [MainThread] [WARNING]: Bus 17: Arrêt actuel S1 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.233] [MainThread] [INFO]: Bus 17: Réinitialisé à l'arrêt S4
+[2025-03-20 13:07:35.234] [MainThread] [WARNING]: Bus 20: Arrêt actuel S5 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.236] [MainThread] [INFO]: Bus 20: Réinitialisé à l'arrêt S9
+[2025-03-20 13:07:35.236] [MainThread] [WARNING]: Bus 22: Arrêt actuel S13 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.238] [MainThread] [INFO]: Bus 22: Réinitialisé à l'arrêt S15
+[2025-03-20 13:07:35.238] [MainThread] [WARNING]: Bus 27: Arrêt actuel S1 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.239] [MainThread] [INFO]: Bus 27: Réinitialisé à l'arrêt S4
+[2025-03-20 13:07:35.240] [MainThread] [WARNING]: Bus 29: Arrêt actuel S5 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.240] [MainThread] [INFO]: Bus 29: Réinitialisé à l'arrêt S9
+[2025-03-20 13:07:35.241] [MainThread] [WARNING]: Bus 34: Arrêt actuel S1 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.242] [MainThread] [INFO]: Bus 34: Réinitialisé à l'arrêt S4
+[2025-03-20 13:07:35.242] [MainThread] [WARNING]: Bus 37: Arrêt actuel S13 non trouvé dans la route - réinitialisation
+[2025-03-20 13:07:35.244] [MainThread] [INFO]: Bus 37: Réinitialisé à l'arrêt S15
+[2025-03-20 13:07:35.245] [MainThread] [INFO]: Création des threads arrêts...
+[2025-03-20 13:07:35.250] [MainThread] [INFO]: Création des threads stations...
+[2025-03-20 13:07:35.251] [MainThread] [INFO]: Création des threads intersections...
+[2025-03-20 13:07:35.253] [Passenger-Passenger-0] [INFO]: 👤 Passager Passenger-0 - Status: waiting, Position: En attente à S9, Destination: STS Central
+[2025-03-20 13:07:35.254] [Passenger-Passenger-1] [INFO]: 👤 Passager Passenger-1 - Status: waiting, Position: En attente à S2, Destination: Bishop
+[2025-03-20 13:07:35.255] [Passenger-Passenger-2] [INFO]: 👤 Passager Passenger-2 - Status: waiting, Position: En attente à S3, Destination: Dépôt
+[2025-03-20 13:07:35.256] [Passenger-Passenger-3] [INFO]: 👤 Passager Passenger-3 - Status: waiting, Position: En attente à S4, Destination: Dépôt
+[2025-03-20 13:07:35.257] [Passenger-Passenger-4] [INFO]: 👤 Passager Passenger-4 - Status: waiting, Position: En attente à S18, Destination: CEGEP
+[2025-03-20 13:07:35.258] [Passenger-Passenger-5] [INFO]: 👤 Passager Passenger-5 - Status: waiting, Position: En attente à S15, Destination: UdeS
+[2025-03-20 13:07:35.259] [Passenger-Passenger-6] [INFO]: 👤 Passager Passenger-6 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:35.261] [Passenger-Passenger-7] [INFO]: 👤 Passager Passenger-7 - Status: waiting, Position: En attente à S17, Destination: Bishop
+[2025-03-20 13:07:35.264] [Passenger-Passenger-8] [INFO]: 👤 Passager Passenger-8 - Status: waiting, Position: En attente à S14, Destination: CEGEP
+[2025-03-20 13:07:35.266] [Passenger-Passenger-9] [INFO]: 👤 Passager Passenger-9 - Status: waiting, Position: En attente à S12, Destination: STS Central
+[2025-03-20 13:07:35.268] [Passenger-Passenger-10] [INFO]: 👤 Passager Passenger-10 - Status: waiting, Position: En attente à S9, Destination: Bishop
+[2025-03-20 13:07:35.269] [Passenger-Passenger-11] [INFO]: 👤 Passager Passenger-11 - Status: waiting, Position: En attente à S18, Destination: Bishop
+[2025-03-20 13:07:35.271] [Passenger-Passenger-12] [INFO]: 👤 Passager Passenger-12 - Status: waiting, Position: En attente à S9, Destination: STS Central
+[2025-03-20 13:07:35.272] [Passenger-Passenger-13] [INFO]: 👤 Passager Passenger-13 - Status: waiting, Position: En attente à S7, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.273] [Passenger-Passenger-14] [INFO]: 👤 Passager Passenger-14 - Status: waiting, Position: En attente à S12, Destination: STS Central
+[2025-03-20 13:07:35.274] [Passenger-Passenger-15] [INFO]: 👤 Passager Passenger-15 - Status: waiting, Position: En attente à S18, Destination: Bishop
+[2025-03-20 13:07:35.274] [Passenger-Passenger-16] [INFO]: 👤 Passager Passenger-16 - Status: waiting, Position: En attente à S1, Destination: STS Central
+[2025-03-20 13:07:35.275] [Passenger-Passenger-17] [INFO]: 👤 Passager Passenger-17 - Status: waiting, Position: En attente à S8, Destination: STS Central
+[2025-03-20 13:07:35.276] [Passenger-Passenger-18] [INFO]: 👤 Passager Passenger-18 - Status: waiting, Position: En attente à S12, Destination: UdeS
+[2025-03-20 13:07:35.278] [Passenger-Passenger-19] [INFO]: 👤 Passager Passenger-19 - Status: waiting, Position: En attente à S5, Destination: Dépôt
+[2025-03-20 13:07:35.280] [Passenger-Passenger-20] [INFO]: 👤 Passager Passenger-20 - Status: waiting, Position: En attente à S6, Destination: UdeS
+[2025-03-20 13:07:35.281] [Passenger-Passenger-21] [INFO]: 👤 Passager Passenger-21 - Status: waiting, Position: En attente à S0, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.286] [Passenger-Passenger-22] [INFO]: 👤 Passager Passenger-22 - Status: waiting, Position: En attente à S1, Destination: STS Central
+[2025-03-20 13:07:35.287] [Passenger-Passenger-23] [INFO]: 👤 Passager Passenger-23 - Status: waiting, Position: En attente à S9, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.287] [Passenger-Passenger-24] [INFO]: 👤 Passager Passenger-24 - Status: waiting, Position: En attente à S2, Destination: UdeS
+[2025-03-20 13:07:35.288] [Passenger-Passenger-25] [INFO]: 👤 Passager Passenger-25 - Status: waiting, Position: En attente à S12, Destination: UdeS
+[2025-03-20 13:07:35.289] [Passenger-Passenger-26] [INFO]: 👤 Passager Passenger-26 - Status: waiting, Position: En attente à S2, Destination: STS Central
+[2025-03-20 13:07:35.292] [Passenger-Passenger-27] [INFO]: 👤 Passager Passenger-27 - Status: waiting, Position: En attente à S12, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.293] [Passenger-Passenger-28] [INFO]: 👤 Passager Passenger-28 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:35.296] [Passenger-Passenger-29] [INFO]: 👤 Passager Passenger-29 - Status: waiting, Position: En attente à S11, Destination: STS Central
+[2025-03-20 13:07:35.297] [Passenger-Passenger-30] [INFO]: 👤 Passager Passenger-30 - Status: waiting, Position: En attente à S20, Destination: Bishop
+[2025-03-20 13:07:35.299] [Passenger-Passenger-31] [INFO]: 👤 Passager Passenger-31 - Status: waiting, Position: En attente à S18, Destination: Dépôt
+[2025-03-20 13:07:35.301] [Passenger-Passenger-32] [INFO]: 👤 Passager Passenger-32 - Status: waiting, Position: En attente à S0, Destination: Bishop
+[2025-03-20 13:07:35.302] [Passenger-Passenger-33] [INFO]: 👤 Passager Passenger-33 - Status: waiting, Position: En attente à S15, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.304] [Passenger-Passenger-34] [INFO]: 👤 Passager Passenger-34 - Status: waiting, Position: En attente à S10, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.305] [Passenger-Passenger-35] [INFO]: 👤 Passager Passenger-35 - Status: waiting, Position: En attente à S13, Destination: UdeS
+[2025-03-20 13:07:35.307] [Passenger-Passenger-36] [INFO]: 👤 Passager Passenger-36 - Status: waiting, Position: En attente à S10, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.308] [Passenger-Passenger-37] [INFO]: 👤 Passager Passenger-37 - Status: waiting, Position: En attente à S2, Destination: CEGEP
+[2025-03-20 13:07:35.309] [Passenger-Passenger-38] [INFO]: 👤 Passager Passenger-38 - Status: waiting, Position: En attente à S20, Destination: STS Central
+[2025-03-20 13:07:35.310] [Passenger-Passenger-39] [INFO]: 👤 Passager Passenger-39 - Status: waiting, Position: En attente à S2, Destination: Dépôt
+[2025-03-20 13:07:35.312] [Passenger-Passenger-40] [INFO]: 👤 Passager Passenger-40 - Status: waiting, Position: En attente à S16, Destination: STS Central
+[2025-03-20 13:07:35.315] [Passenger-Passenger-41] [INFO]: 👤 Passager Passenger-41 - Status: waiting, Position: En attente à S7, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.316] [Passenger-Passenger-42] [INFO]: 👤 Passager Passenger-42 - Status: waiting, Position: En attente à S6, Destination: Bishop
+[2025-03-20 13:07:35.317] [Passenger-Passenger-43] [INFO]: 👤 Passager Passenger-43 - Status: waiting, Position: En attente à S2, Destination: Dépôt
+[2025-03-20 13:07:35.319] [Passenger-Passenger-44] [INFO]: 👤 Passager Passenger-44 - Status: waiting, Position: En attente à S0, Destination: Bishop
+[2025-03-20 13:07:35.320] [Passenger-Passenger-45] [INFO]: 👤 Passager Passenger-45 - Status: waiting, Position: En attente à S11, Destination: STS Central
+[2025-03-20 13:07:35.321] [Passenger-Passenger-46] [INFO]: 👤 Passager Passenger-46 - Status: waiting, Position: En attente à S13, Destination: Dépôt
+[2025-03-20 13:07:35.322] [Passenger-Passenger-47] [INFO]: 👤 Passager Passenger-47 - Status: waiting, Position: En attente à S19, Destination: STS Central
+[2025-03-20 13:07:35.322] [Passenger-Passenger-48] [INFO]: 👤 Passager Passenger-48 - Status: waiting, Position: En attente à S5, Destination: UdeS
+[2025-03-20 13:07:35.323] [Passenger-Passenger-49] [INFO]: 👤 Passager Passenger-49 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:35.325] [Passenger-Passenger-50] [INFO]: 👤 Passager Passenger-50 - Status: waiting, Position: En attente à S7, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.326] [Passenger-Passenger-51] [INFO]: 👤 Passager Passenger-51 - Status: waiting, Position: En attente à S15, Destination: STS Central
+[2025-03-20 13:07:35.327] [Passenger-Passenger-52] [INFO]: 👤 Passager Passenger-52 - Status: waiting, Position: En attente à S20, Destination: Bishop
+[2025-03-20 13:07:35.328] [Passenger-Passenger-53] [INFO]: 👤 Passager Passenger-53 - Status: waiting, Position: En attente à S8, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.329] [Passenger-Passenger-54] [INFO]: 👤 Passager Passenger-54 - Status: waiting, Position: En attente à S5, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.331] [Passenger-Passenger-55] [INFO]: 👤 Passager Passenger-55 - Status: waiting, Position: En attente à S9, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.333] [Passenger-Passenger-56] [INFO]: 👤 Passager Passenger-56 - Status: waiting, Position: En attente à S5, Destination: Bishop
+[2025-03-20 13:07:35.334] [Passenger-Passenger-57] [INFO]: 👤 Passager Passenger-57 - Status: waiting, Position: En attente à S13, Destination: CEGEP
+[2025-03-20 13:07:35.335] [Passenger-Passenger-58] [INFO]: 👤 Passager Passenger-58 - Status: waiting, Position: En attente à S4, Destination: CEGEP
+[2025-03-20 13:07:35.336] [Passenger-Passenger-59] [INFO]: 👤 Passager Passenger-59 - Status: waiting, Position: En attente à S14, Destination: Dépôt
+[2025-03-20 13:07:35.337] [Passenger-Passenger-60] [INFO]: 👤 Passager Passenger-60 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:35.338] [Passenger-Passenger-61] [INFO]: 👤 Passager Passenger-61 - Status: waiting, Position: En attente à S15, Destination: STS Central
+[2025-03-20 13:07:35.338] [Passenger-Passenger-62] [INFO]: 👤 Passager Passenger-62 - Status: waiting, Position: En attente à S2, Destination: UdeS
+[2025-03-20 13:07:35.340] [Passenger-Passenger-63] [INFO]: 👤 Passager Passenger-63 - Status: waiting, Position: En attente à S8, Destination: UdeS
+[2025-03-20 13:07:35.341] [Passenger-Passenger-64] [INFO]: 👤 Passager Passenger-64 - Status: waiting, Position: En attente à S6, Destination: Dépôt
+[2025-03-20 13:07:35.342] [Passenger-Passenger-65] [INFO]: 👤 Passager Passenger-65 - Status: waiting, Position: En attente à S1, Destination: UdeS
+[2025-03-20 13:07:35.342] [Passenger-Passenger-66] [INFO]: 👤 Passager Passenger-66 - Status: waiting, Position: En attente à S19, Destination: Bishop
+[2025-03-20 13:07:35.344] [Passenger-Passenger-67] [INFO]: 👤 Passager Passenger-67 - Status: waiting, Position: En attente à S2, Destination: Bishop
+[2025-03-20 13:07:35.347] [Passenger-Passenger-68] [INFO]: 👤 Passager Passenger-68 - Status: waiting, Position: En attente à S11, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.348] [Passenger-Passenger-69] [INFO]: 👤 Passager Passenger-69 - Status: waiting, Position: En attente à S13, Destination: Dépôt
+[2025-03-20 13:07:35.350] [Passenger-Passenger-70] [INFO]: 👤 Passager Passenger-70 - Status: waiting, Position: En attente à S16, Destination: Bishop
+[2025-03-20 13:07:35.352] [Passenger-Passenger-71] [INFO]: 👤 Passager Passenger-71 - Status: waiting, Position: En attente à S19, Destination: Bishop
+[2025-03-20 13:07:35.353] [Passenger-Passenger-72] [INFO]: 👤 Passager Passenger-72 - Status: waiting, Position: En attente à S16, Destination: STS Central
+[2025-03-20 13:07:35.354] [Passenger-Passenger-73] [INFO]: 👤 Passager Passenger-73 - Status: waiting, Position: En attente à S0, Destination: CEGEP
+[2025-03-20 13:07:35.354] [Passenger-Passenger-74] [INFO]: 👤 Passager Passenger-74 - Status: waiting, Position: En attente à S8, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.355] [Passenger-Passenger-75] [INFO]: 👤 Passager Passenger-75 - Status: waiting, Position: En attente à S13, Destination: STS Central
+[2025-03-20 13:07:35.356] [Passenger-Passenger-76] [INFO]: 👤 Passager Passenger-76 - Status: waiting, Position: En attente à S0, Destination: Bishop
+[2025-03-20 13:07:35.357] [Passenger-Passenger-77] [INFO]: 👤 Passager Passenger-77 - Status: waiting, Position: En attente à S7, Destination: Dépôt
+[2025-03-20 13:07:35.358] [Passenger-Passenger-78] [INFO]: 👤 Passager Passenger-78 - Status: waiting, Position: En attente à S13, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.359] [Passenger-Passenger-79] [INFO]: 👤 Passager Passenger-79 - Status: waiting, Position: En attente à S1, Destination: Dépôt
+[2025-03-20 13:07:35.360] [Passenger-Passenger-80] [INFO]: 👤 Passager Passenger-80 - Status: waiting, Position: En attente à S14, Destination: Dépôt
+[2025-03-20 13:07:35.361] [Passenger-Passenger-81] [INFO]: 👤 Passager Passenger-81 - Status: waiting, Position: En attente à S12, Destination: Bishop
+[2025-03-20 13:07:35.363] [Passenger-Passenger-82] [INFO]: 👤 Passager Passenger-82 - Status: waiting, Position: En attente à S0, Destination: CEGEP
+[2025-03-20 13:07:35.367] [Passenger-Passenger-83] [INFO]: 👤 Passager Passenger-83 - Status: waiting, Position: En attente à S8, Destination: UdeS
+[2025-03-20 13:07:35.369] [Passenger-Passenger-84] [INFO]: 👤 Passager Passenger-84 - Status: waiting, Position: En attente à S4, Destination: STS Central
+[2025-03-20 13:07:35.371] [Passenger-Passenger-85] [INFO]: 👤 Passager Passenger-85 - Status: waiting, Position: En attente à S14, Destination: UdeS
+[2025-03-20 13:07:35.372] [Passenger-Passenger-86] [INFO]: 👤 Passager Passenger-86 - Status: waiting, Position: En attente à S11, Destination: STS Central
+[2025-03-20 13:07:35.373] [Passenger-Passenger-87] [INFO]: 👤 Passager Passenger-87 - Status: waiting, Position: En attente à S14, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.374] [Passenger-Passenger-88] [INFO]: 👤 Passager Passenger-88 - Status: waiting, Position: En attente à S8, Destination: Bishop
+[2025-03-20 13:07:35.376] [Passenger-Passenger-89] [INFO]: 👤 Passager Passenger-89 - Status: waiting, Position: En attente à S13, Destination: Carrefour-Estrie
+[2025-03-20 13:07:35.378] [Passenger-Passenger-90] [INFO]: 👤 Passager Passenger-90 - Status: waiting, Position: En attente à S15, Destination: Dépôt
+[2025-03-20 13:07:35.380] [Passenger-Passenger-91] [INFO]: 👤 Passager Passenger-91 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:35.383] [Passenger-Passenger-92] [INFO]: 👤 Passager Passenger-92 - Status: waiting, Position: En attente à S1, Destination: Bishop
+[2025-03-20 13:07:35.385] [Passenger-Passenger-93] [INFO]: 👤 Passager Passenger-93 - Status: waiting, Position: En attente à S10, Destination: Bishop
+[2025-03-20 13:07:35.387] [Passenger-Passenger-94] [INFO]: 👤 Passager Passenger-94 - Status: waiting, Position: En attente à S19, Destination: CEGEP
+[2025-03-20 13:07:35.388] [Passenger-Passenger-95] [INFO]: 👤 Passager Passenger-95 - Status: waiting, Position: En attente à S10, Destination: CEGEP
+[2025-03-20 13:07:35.390] [Passenger-Passenger-96] [INFO]: 👤 Passager Passenger-96 - Status: waiting, Position: En attente à S19, Destination: STS Central
+[2025-03-20 13:07:35.390] [Passenger-Passenger-97] [INFO]: 👤 Passager Passenger-97 - Status: waiting, Position: En attente à S7, Destination: UdeS
+[2025-03-20 13:07:35.391] [Passenger-Passenger-98] [INFO]: 👤 Passager Passenger-98 - Status: waiting, Position: En attente à S8, Destination: Dépôt
+[2025-03-20 13:07:35.392] [Passenger-Passenger-99] [INFO]: 👤 Passager Passenger-99 - Status: waiting, Position: En attente à S1, Destination: STS Central
+[2025-03-20 13:07:35.394] [Bus-Bus-0] [INFO]: 🚌 Bus 0 à S0 - Passagers: 0/30 - Route: R1-A
+[2025-03-20 13:07:35.397] [Bus-Bus-1] [INFO]: 🚌 Bus 1 à S0 - Passagers: 0/30 - Route: R1-A
+[2025-03-20 13:07:35.401] [Bus-Bus-2] [INFO]: 🚌 Bus 2 à S1 - Passagers: 0/30 - Route: R1-B
+[2025-03-20 13:07:35.402] [Bus-Bus-0] [INFO]: ⬆️ Passager Passenger-21 monte dans le bus 0 à S0
+[2025-03-20 13:07:35.404] [Bus-Bus-3] [INFO]: 🚌 Bus 3 à S1 - Passagers: 0/30 - Route: R1-B
+[2025-03-20 13:07:35.406] [Bus-Bus-4] [INFO]: 🚌 Bus 4 à S0 - Passagers: 0/30 - Route: R2-A
+[2025-03-20 13:07:35.407] [Bus-Bus-5] [INFO]: 🚌 Bus 5 à S5 - Passagers: 0/30 - Route: R2-B
+[2025-03-20 13:07:35.408] [Bus-Bus-2] [INFO]: ⬆️ Passager Passenger-16 monte dans le bus 2 à S1
+[2025-03-20 13:07:35.408] [Bus-Bus-6] [INFO]: 🚌 Bus 6 à S5 - Passagers: 0/30 - Route: R2-B
+[2025-03-20 13:07:35.410] [Bus-Bus-3] [INFO]: ⬆️ Passager Passenger-22 monte dans le bus 3 à S1
+[2025-03-20 13:07:35.414] [Bus-Bus-7] [INFO]: 🚌 Bus 7 à S4 - Passagers: 0/30 - Route: R3-A
+[2025-03-20 13:07:35.416] [Bus-Bus-4] [INFO]: ⬆️ Passager Passenger-73 monte dans le bus 4 à S0
+[2025-03-20 13:07:35.417] [Bus-Bus-8] [INFO]: 🚌 Bus 8 à S16 - Passagers: 0/30 - Route: R3-B
+[2025-03-20 13:07:35.421] [Bus-Bus-9] [INFO]: 🚌 Bus 9 à S16 - Passagers: 0/30 - Route: R3-B
+[2025-03-20 13:07:35.423] [Bus-Bus-2] [INFO]: ⬆️ Passager Passenger-22 monte dans le bus 2 à S1
+[2025-03-20 13:07:35.423] [Bus-Bus-10] [INFO]: 🚌 Bus 10 à S9 - Passagers: 0/30 - Route: R4-A
+[2025-03-20 13:07:35.425] [Bus-Bus-11] [INFO]: 🚌 Bus 11 à S13 - Passagers: 0/30 - Route: R4-B
+[2025-03-20 13:07:35.425] [Bus-Bus-3] [INFO]: ⬆️ Passager Passenger-99 monte dans le bus 3 à S1
+[2025-03-20 13:07:35.427] [Bus-Bus-12] [INFO]: 🚌 Bus 12 à S20 - Passagers: 0/30 - Route: R5-A
+[2025-03-20 13:07:35.434] [Bus-Bus-13] [INFO]: 🚌 Bus 13 à S10 - Passagers: 0/30 - Route: R5-B
+[2025-03-20 13:07:35.435] [Bus-Bus-4] [INFO]: ⬆️ Passager Passenger-82 monte dans le bus 4 à S0
+[2025-03-20 13:07:35.436] [Bus-Bus-14] [INFO]: 🚌 Bus 14 à S10 - Passagers: 0/30 - Route: R5-B
+[2025-03-20 13:07:35.438] [Bus-Bus-15] [INFO]: 🚌 Bus 15 à S0 - Passagers: 0/40 - Route: R6-A
+[2025-03-20 13:07:35.439] [Bus-Bus-16] [INFO]: 🚌 Bus 16 à S13 - Passagers: 0/40 - Route: R6-B
+[2025-03-20 13:07:35.439] [Bus-Bus-2] [INFO]: ⬆️ Passager Passenger-99 monte dans le bus 2 à S1
+[2025-03-20 13:07:35.440] [Bus-Bus-17] [INFO]: 🚌 Bus 17 à S4 - Passagers: 0/40 - Route: R7-A
+[2025-03-20 13:07:35.441] [Bus-Bus-18] [INFO]: 🚌 Bus 18 à S10 - Passagers: 0/40 - Route: R7-B
+[2025-03-20 13:07:35.441] [Bus-Bus-19] [INFO]: 🚌 Bus 19 à S10 - Passagers: 0/40 - Route: R7-B
+[2025-03-20 13:07:35.441] [Bus-Bus-10] [INFO]: ⬆️ Passager Passenger-10 monte dans le bus 10 à S9
+[2025-03-20 13:07:35.442] [Bus-Bus-20] [INFO]: 🚌 Bus 20 à S9 - Passagers: 0/40 - Route: R8-A
+[2025-03-20 13:07:35.443] [Bus-Bus-21] [INFO]: 🚌 Bus 21 à S16 - Passagers: 0/40 - Route: R8-B
+[2025-03-20 13:07:35.446] [Bus-Bus-11] [INFO]: ⬆️ Passager Passenger-57 monte dans le bus 11 à S13
+[2025-03-20 13:07:35.447] [Bus-Bus-22] [INFO]: 🚌 Bus 22 à S15 - Passagers: 0/40 - Route: R9-A
+[2025-03-20 13:07:35.449] [Bus-Bus-23] [INFO]: 🚌 Bus 23 à S10 - Passagers: 0/40 - Route: R9-B
+[2025-03-20 13:07:35.450] [Bus-Bus-24] [INFO]: 🚌 Bus 24 à S0 - Passagers: 0/40 - Route: R10-A
+[2025-03-20 13:07:35.452] [Bus-Bus-25] [INFO]: 🚌 Bus 25 à S16 - Passagers: 0/40 - Route: R10-B
+[2025-03-20 13:07:35.454] [Bus-Bus-26] [INFO]: 🚌 Bus 26 à S16 - Passagers: 0/40 - Route: R10-B
+[2025-03-20 13:07:35.455] [Bus-Bus-27] [INFO]: 🚌 Bus 27 à S4 - Passagers: 0/40 - Route: R11-A
+[2025-03-20 13:07:35.456] [Bus-Bus-28] [INFO]: 🚌 Bus 28 à S13 - Passagers: 0/40 - Route: R11-B
+[2025-03-20 13:07:35.458] [Bus-Bus-15] [INFO]: ⬆️ Passager Passenger-32 monte dans le bus 15 à S0
+[2025-03-20 13:07:35.459] [Bus-Bus-29] [INFO]: 🚌 Bus 29 à S9 - Passagers: 0/40 - Route: R12-A
+[2025-03-20 13:07:35.462] [Bus-Bus-30] [INFO]: 🚌 Bus 30 à S10 - Passagers: 0/60 - Route: R12-B
+[2025-03-20 13:07:35.465] [Bus-Bus-16] [INFO]: ⬆️ Passager Passenger-75 monte dans le bus 16 à S13
+[2025-03-20 13:07:35.466] [Bus-Bus-31] [INFO]: 🚌 Bus 31 à S10 - Passagers: 0/60 - Route: R12-B
+[2025-03-20 13:07:35.468] [Bus-Bus-32] [INFO]: 🚌 Bus 32 à S0 - Passagers: 0/60 - Route: R13-A
+[2025-03-20 13:07:35.469] [Bus-Bus-33] [INFO]: 🚌 Bus 33 à S10 - Passagers: 0/60 - Route: R13-B
+[2025-03-20 13:07:35.471] [Bus-Bus-34] [INFO]: 🚌 Bus 34 à S4 - Passagers: 0/60 - Route: R14-A
+[2025-03-20 13:07:35.472] [Bus-Bus-35] [INFO]: 🚌 Bus 35 à S5 - Passagers: 0/50 - Route: R14-B
+[2025-03-20 13:07:35.472] [Bus-Bus-17] [INFO]: ⬆️ Passager Passenger-3 monte dans le bus 17 à S4
+[2025-03-20 13:07:35.473] [Bus-Bus-36] [INFO]: 🚌 Bus 36 à S5 - Passagers: 0/50 - Route: R14-B
+[2025-03-20 13:07:35.475] [Bus-Bus-37] [INFO]: 🚌 Bus 37 à S15 - Passagers: 0/50 - Route: R15-A
+[2025-03-20 13:07:35.476] [Bus-Bus-18] [INFO]: ⬆️ Passager Passenger-34 monte dans le bus 18 à S10
+[2025-03-20 13:07:35.478] [Bus-Bus-38] [INFO]: 🚌 Bus 38 à S16 - Passagers: 0/50 - Route: R15-B
+[2025-03-20 13:07:35.480] [Bus-Bus-19] [INFO]: ⬆️ Passager Passenger-34 monte dans le bus 19 à S10
+[2025-03-20 13:07:35.481] [Bus-Bus-39] [INFO]: 🚌 Bus 39 à S16 - Passagers: 0/50 - Route: R15-B
+[2025-03-20 13:07:35.483] [Stop-S0] [INFO]: ⌛ 7 passagers en attente à S0
+[2025-03-20 13:07:35.484] [Stop-S1] [INFO]: ⌛ 3 passagers en attente à S1
+[2025-03-20 13:07:35.487] [Stop-S2] [INFO]: ⌛ 8 passagers en attente à S2
+[2025-03-20 13:07:35.488] [Stop-S3] [INFO]: ⌛ 1 passagers en attente à S3
+[2025-03-20 13:07:35.489] [Bus-Bus-22] [INFO]: ⬆️ Passager Passenger-90 monte dans le bus 22 à S15
+[2025-03-20 13:07:35.490] [Stop-S4] [INFO]: ⌛ 2 passagers en attente à S4
+[2025-03-20 13:07:35.491] [Stop-S5] [INFO]: ⌛ 4 passagers en attente à S5
+[2025-03-20 13:07:35.492] [Bus-Bus-23] [INFO]: ⬆️ Passager Passenger-93 monte dans le bus 23 à S10
+[2025-03-20 13:07:35.492] [Stop-S6] [INFO]: ⌛ 3 passagers en attente à S6
+[2025-03-20 13:07:35.493] [Stop-S7] [INFO]: ⌛ 5 passagers en attente à S7
+[2025-03-20 13:07:35.494] [Stop-S8] [INFO]: ⌛ 7 passagers en attente à S8
+[2025-03-20 13:07:35.495] [Bus-Bus-24] [INFO]: ⬆️ Passager Passenger-6 monte dans le bus 24 à S0
+[2025-03-20 13:07:35.496] [Stop-S9] [INFO]: ⌛ 4 passagers en attente à S9
+[2025-03-20 13:07:35.499] [Stop-S10] [INFO]: ⌛ 2 passagers en attente à S10
+[2025-03-20 13:07:35.499] [Bus-Bus-25] [INFO]: ⬆️ Passager Passenger-40 monte dans le bus 25 à S16
+[2025-03-20 13:07:35.501] [Stop-S11] [INFO]: ⌛ 4 passagers en attente à S11
+[2025-03-20 13:07:35.502] [Stop-S12] [INFO]: ⌛ 6 passagers en attente à S12
+[2025-03-20 13:07:35.504] [Stop-S13] [INFO]: ⌛ 5 passagers en attente à S13
+[2025-03-20 13:07:35.504] [Bus-Bus-26] [INFO]: ⬆️ Passager Passenger-72 monte dans le bus 26 à S16
+[2025-03-20 13:07:35.505] [Stop-S14] [INFO]: ⌛ 5 passagers en attente à S14
+[2025-03-20 13:07:35.506] [Stop-S15] [INFO]: ⌛ 4 passagers en attente à S15
+[2025-03-20 13:07:35.506] [Stop-S16] [INFO]: ⌛ 1 passagers en attente à S16
+[2025-03-20 13:07:35.507] [Stop-S17] [INFO]: ⌛ 1 passagers en attente à S17
+[2025-03-20 13:07:35.507] [Bus-Bus-28] [INFO]: ⬆️ Passager Passenger-78 monte dans le bus 28 à S13
+[2025-03-20 13:07:35.507] [Stop-S18] [INFO]: ⌛ 4 passagers en attente à S18
+[2025-03-20 13:07:35.509] [Stop-S19] [INFO]: ⌛ 5 passagers en attente à S19
+[2025-03-20 13:07:35.510] [Stop-S20] [INFO]: ⌛ 3 passagers en attente à S20
+[2025-03-20 13:07:35.510] [Bus-Bus-15] [INFO]: ⬆️ Passager Passenger-44 monte dans le bus 15 à S0
+[2025-03-20 13:07:35.517] [Bus-Bus-30] [INFO]: ⬆️ Passager Passenger-95 monte dans le bus 30 à S10
+[2025-03-20 13:07:35.525] [Bus-Bus-34] [INFO]: ⬆️ Passager Passenger-58 monte dans le bus 34 à S4
+[2025-03-20 13:07:35.527] [Bus-Bus-35] [INFO]: ⬆️ Passager Passenger-54 monte dans le bus 35 à S5
+[2025-03-20 13:07:35.533] [Bus-Bus-37] [INFO]: ⬆️ Passager Passenger-5 monte dans le bus 37 à S15
+[2025-03-20 13:07:35.535] [Bus-Bus-18] [INFO]: ⬆️ Passager Passenger-36 monte dans le bus 18 à S10
+[2025-03-20 13:07:35.539] [Bus-Bus-38] [INFO]: ⬆️ Passager Passenger-70 monte dans le bus 38 à S16
+[2025-03-20 13:07:35.539] [Bus-Bus-19] [INFO]: ⬆️ Passager Passenger-36 monte dans le bus 19 à S10
+[2025-03-20 13:07:35.541] [Stop-S0] [INFO]: 🚏 5 passagers en attente à S0
+[2025-03-20 13:07:35.541] [Stop-S1] [INFO]: 🚏 3 passagers en attente à S1
+[2025-03-20 13:07:35.542] [Stop-S2] [INFO]: 🚏 8 passagers en attente à S2
+[2025-03-20 13:07:35.542] [Stop-S3] [INFO]: 🚏 1 passagers en attente à S3
+[2025-03-20 13:07:35.545] [Stop-S4] [INFO]: 🚏 1 passagers en attente à S4
+[2025-03-20 13:07:35.547] [Stop-S5] [INFO]: 🚏 3 passagers en attente à S5
+[2025-03-20 13:07:35.550] [Stop-S6] [INFO]: 🚏 3 passagers en attente à S6
+[2025-03-20 13:07:35.551] [Stop-S7] [INFO]: 🚏 5 passagers en attente à S7
+[2025-03-20 13:07:35.552] [Stop-S8] [INFO]: 🚏 7 passagers en attente à S8
+[2025-03-20 13:07:35.555] [Stop-S9] [INFO]: 🚏 4 passagers en attente à S9
+[2025-03-20 13:07:35.556] [Bus-Bus-24] [INFO]: ⬆️ Passager Passenger-28 monte dans le bus 24 à S0
+[2025-03-20 13:07:35.558] [Stop-S11] [INFO]: 🚏 4 passagers en attente à S11
+[2025-03-20 13:07:35.559] [Bus-Bus-25] [INFO]: ⬆️ Passager Passenger-72 monte dans le bus 25 à S16
+[2025-03-20 13:07:35.563] [Stop-S12] [INFO]: 🚏 6 passagers en attente à S12
+[2025-03-20 13:07:35.565] [Stop-S13] [INFO]: 🚏 4 passagers en attente à S13
+[2025-03-20 13:07:35.567] [Station-STS Central] [INFO]: 🏢 Station STS Central: 4 passagers total
+[2025-03-20 13:07:35.567] [Stop-S14] [INFO]: 🚏 5 passagers en attente à S14
+[2025-03-20 13:07:35.569] [Stop-S15] [INFO]: 🚏 3 passagers en attente à S15
+[2025-03-20 13:07:35.569] [Station-Carrefour-Estrie] [INFO]: 🏢 Station Carrefour-Estrie: 13 passagers total
+[2025-03-20 13:07:35.570] [Station-CEGEP] [INFO]: 🏢 Station CEGEP: 22 passagers total
+[2025-03-20 13:07:35.571] [Station-Dépôt] [INFO]: 🏢 Station Dépôt: 10 passagers total
+[2025-03-20 13:07:35.573] [Stop-S17] [INFO]: 🚏 1 passagers en attente à S17
+[2025-03-20 13:07:35.574] [Station-Bishop] [INFO]: 🏢 Station Bishop: 12 passagers total
+[2025-03-20 13:07:35.575] [Station-UdeS] [INFO]: 🏢 Station UdeS: 13 passagers total
+[2025-03-20 13:07:35.575] [Stop-S18] [INFO]: 🚏 4 passagers en attente à S18
+[2025-03-20 13:07:35.576] [Stop-S19] [INFO]: 🚏 5 passagers en attente à S19
+[2025-03-20 13:07:35.579] [Bus-Bus-28] [INFO]: ⬆️ Passager Passenger-89 monte dans le bus 28 à S13
+[2025-03-20 13:07:35.583] [Stop-S20] [INFO]: 🚏 3 passagers en attente à S20
+[2025-03-20 13:07:35.588] [Bus-Bus-15] [INFO]: ⬆️ Passager Passenger-76 monte dans le bus 15 à S0
+[2025-03-20 13:07:35.589] [MainThread] [INFO]: ✨ Simulation démarrée
+[2025-03-20 13:07:35.603] [Bus-Bus-24] [INFO]: ⬆️ Passager Passenger-49 monte dans le bus 24 à S0
+[2025-03-20 13:07:35.624] [Bus-Bus-24] [INFO]: ⬆️ Passager Passenger-60 monte dans le bus 24 à S0
+[2025-03-20 13:07:35.627] [Bus-Bus-24] [INFO]: ⬆️ Passager Passenger-91 monte dans le bus 24 à S0
+[2025-03-20 13:07:37.306] [Passenger-Passenger-9] [INFO]: 👤 Passager Passenger-9 - Status: waiting, Position: En attente à S12, Destination: STS Central
+[2025-03-20 13:07:37.379] [Passenger-Passenger-17] [INFO]: 👤 Passager Passenger-17 - Status: waiting, Position: En attente à S8, Destination: STS Central
+[2025-03-20 13:07:37.384] [Passenger-Passenger-52] [INFO]: 👤 Passager Passenger-52 - Status: waiting, Position: En attente à S20, Destination: Bishop
+[2025-03-20 13:07:37.400] [Passenger-Passenger-41] [INFO]: 👤 Passager Passenger-41 - Status: waiting, Position: En attente à S7, Destination: Carrefour-Estrie
+[2025-03-20 13:07:37.474] [Passenger-Passenger-28] [INFO]: 👤 Passager Passenger-28 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:37.480] [Passenger-Passenger-49] [INFO]: 👤 Passager Passenger-49 - Status: waiting, Position: En attente à S0, Destination: UdeS
+[2025-03-20 13:07:37.503] [Passenger-Passenger-64] [INFO]: 👤 Passager Passenger-64 - Status: waiting, Position: En attente à S6, Destination: Dépôt
+[2025-03-20 13:07:37.507] [Passenger-Passenger-18] [INFO]: 👤 Passager Passenger-18 - Status: waiting, Position: En attente à S12, Destination: UdeS
+[2025-03-20 13:07:37.586] [Passenger-Passenger-51] [INFO]: 👤 Passager Passenger-51 - Status: waiting, Position: En attente à S15, Destination: STS Central
+[2025-03-20 13:07:37.601] [Passenger-Passenger-56] [INFO]: 👤 Passager Passenger-56 - Status: waiting, Position: En attente à S5, Destination: Bishop
+[2025-03-20 13:07:37.602] [Passenger-Passenger-3] [INFO]: 👤 Passager Passenger-3 - Status: waiting, Position: En attente à S4, Destination: Dépôt
+[2025-03-20 13:07:37.602] [Bus-Bus-12] [INFO]: Bus 12: Déplacement de S20 vers S59
+[2025-03-20 13:07:37.605] [Bus-Bus-12] [INFO]: ➡️ Bus 12 en route vers S59
+[2025-03-20 13:07:37.614] [Passenger-Passenger-97] [INFO]: 👤 Passager Passenger-97 - Status: waiting, Position: En attente à S7, Destination: UdeS
+[2025-03-20 13:07:37.632] [Bus-Bus-4] [INFO]: Bus 4: Déplacement de S0 vers S22
+[2025-03-20 13:07:37.633] [Bus-Bus-4] [INFO]: ➡️ Bus 4 en route vers S22
+[2025-03-20 13:07:37.644] [Passenger-Passenger-34] [INFO]: 👤 Passager Passenger-34 - Status: waiting, Position: En attente à S10, Destination: Carrefour-Estrie
+[2025-03-20 13:07:37.645] [Passenger-Passenger-94] [INFO]: 👤 Passager Passenger-94 - Status: waiting, Position: En attente à S19, Destination: CEGEP
+[2025-03-20 13:07:37.647] [Station-Carrefour-Estrie] [INFO]: 🏢 Station Carrefour-Estrie: 13 passagers total
+[2025-03-20 13:07:37.674] [Bus-Bus-20] [INFO]: Bus 20: Déplacement de S9 vers S46
+[2025-03-20 13:07:37.675] [Passenger-Passenger-1] [INFO]: 👤 Passager Passenger-1 - Status: waiting, Position: En attente à S2, Destination: Bishop
+[2025-03-20 13:07:37.675] [Bus-Bus-20] [INFO]: ➡️ Bus 20 en route vers S46
+[2025-03-20 13:07:37.691] [Bus-Bus-1] [INFO]: Bus 1: Déplacement de S0 vers S21
+[2025-03-20 13:07:37.693] [Bus-Bus-1] [INFO]: ➡️ Bus 1 en route vers S21
+[2025-03-20 13:07:37.703] [Passenger-Passenger-75] [INFO]: 👤 Passager Passenger-75 - Status: waiting, Position: En attente à S13, Destination: STS Central
+[2025-03-20 13:07:37.723] [Bus-Bus-19] [INFO]: Bus 19: Déplacement de S10 vers S51
+[2025-03-20 13:07:37.724] [Bus-Bus-19] [INFO]: ➡️ Bus 19 en route vers S51
+[2025-03-20 13:07:37.732] [Passenger-Passenger-48] [INFO]: 👤 Passager Passenger-48 - Status: waiting, Position: En attente à S5, Destination: UdeS
+[2025-03-20 13:07:37.732] [Bus-Bus-37] [INFO]: Bus 37: Déplacement de S15 vers S63
+[2025-03-20 13:07:37.734] [Bus-Bus-37] [INFO]: ➡️ Bus 37 en route vers S63
+[2025-03-20 13:07:37.740] [Passenger-Passenger-66] [INFO]: 👤 Passager Passenger-66 - Status: waiting, Position: En attente à S19, Destination: Bishop
+[2025-03-20 13:07:37.740] [Bus-Bus-28] [INFO]: Bus 28: Déplacement de S13 vers S61
+[2025-03-20 13:07:37.743] [Bus-Bus-28] [INFO]: ➡️ Bus 28 en route vers S61
+[2025-03-20 13:07:37.765] [Bus-Bus-17] [INFO]: Bus 17: Déplacement de S4 vers S35
+[2025-03-20 13:07:37.765] [Passenger-Passenger-38] [INFO]: 👤 Passager Passenger-38 - Status: waiting, Position: En attente à S20, Destination: STS Central
+[2025-03-20 13:07:37.765] [Passenger-Passenger-84] [INFO]: 👤 Passager Passenger-84 - Status: waiting, Position: En attente à S4, Destination: STS Central
+[2025-03-20 13:07:37.765] [Bus-Bus-17] [INFO]: ➡️ Bus 17 en route vers S35
+[2025-03-20 13:07:37.778] [Passenger-Passenger-58] [INFO]: 👤 Passager Passenger-58 - Status: waiting, Position: En attente à S4, Destination: CEGEP
+[2025-03-20 13:07:37.799] [Stop-S18] [INFO]: ⌛ 4 passagers en attente à S18
+[2025-03-20 13:07:37.799] [Stop-S18] [INFO]: 🚏 4 passagers en attente à S18
+[2025-03-20 13:07:37.800] [Passenger-Passenger-25] [INFO]: 👤 Passager Passenger-25 - Status: waiting, Position: En attente à S12, Destination: UdeS
+[2025-03-20 13:07:37.817] [Passenger-Passenger-14] [INFO]: 👤 Passager Passenger-14 - Status: waiting, Position: En attente à S12, Destination: STS Central
+[2025-03-20 13:07:37.825] [Passenger-Passenger-77] [INFO]: 👤 Passager Passenger-77 - Status: waiting, Position: En attente à S7, Destination: Dépôt
+[2025-03-20 13:07:37.838] [Bus-Bus-31] [INFO]: Bus 31: Déplacement de S10 vers S51
+[2025-03-20 13:07:37.840] [Bus-Bus-31] [INFO]: ➡️ Bus 31 en route vers S51
+[2025-03-20 13:07:37.896] [Passenger-Passenger-79] [INFO]: 👤 Passager Passenger-79 - Status: waiting, Position: En attente à S1, Destination: Dépôt
+[2025-03-20 13:07:37.907] [Passenger-Passenger-33] [INFO]: 👤 Passager Passenger-33 - Status: waiting, Position: En attente à S15, Destination: Carrefour-Estrie
+[2025-03-20 13:07:37.914] [Bus-Bus-24] [INFO]: Bus 24: Déplacement de S0 vers S22
+[2025-03-20 13:07:37.915] [Bus-Bus-24] [INFO]: ➡️ Bus 24 en route vers S22
+[2025-03-20 13:07:37.930] [Passenger-Passenger-47] [INFO]: 👤 Passager Passenger-47 - Status: waiting, Position: En attente à S19, Destination: STS Central
+[2025-03-20 13:07:37.960] [Passenger-Passenger-42] [INFO]: 👤 Passager Passenger-42 - Status: waiting, Position: En attente à S6, Destination: Bishop
+[2025-03-20 13:07:37.964] [Passenger-Passenger-95] [INFO]: 👤 Passager Passenger-95 - Status: waiting, Position: En attente à S10, Destination: CEGEP
+[2025-03-20 13:07:37.966] [Stop-S15] [INFO]: ⌛ 3 passagers en attente à S15
+[2025-03-20 13:07:37.967] [Stop-S15] [INFO]: 🚏 3 passagers en attente à S15
+[2025-03-20 13:07:37.970] [Passenger-Passenger-63] [INFO]: 👤 Passager Passenger-63 - Status: waiting, Position: En attente à S8, Destination: UdeS
+[2025-03-20 13:07:37.994] [Bus-Bus-22] [INFO]: Bus 22: Déplacement de S15 vers S63
+[2025-03-20 13:07:37.996] [Bus-Bus-22] [INFO]: ➡️ Bus 22 en route vers S63
+[2025-03-20 13:07:38.129] [Bus-Bus-7] [INFO]: Bus 7: Déplacement de S4 vers S34
+[2025-03-20 13:07:38.130] [Bus-Bus-7] [INFO]: ➡️ Bus 7 en route vers S34
+[2025-03-20 13:07:38.196] [Bus-Bus-3] [INFO]: Bus 3: Déplacement de S1 vers S31
+[2025-03-20 13:07:38.197] [Bus-Bus-3] [INFO]: ➡️ Bus 3 en route vers S31
+[2025-03-20 13:07:38.257] [Bus-Bus-9] [INFO]: Bus 9: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.258] [Bus-Bus-9] [INFO]: ➡️ Bus 9 en route vers S55
+[2025-03-20 13:07:38.285] [Bus-Bus-34] [INFO]: Bus 34: Déplacement de S4 vers S34
+[2025-03-20 13:07:38.285] [Bus-Bus-34] [INFO]: ➡️ Bus 34 en route vers S34
+[2025-03-20 13:07:38.317] [Bus-Bus-18] [INFO]: Bus 18: Déplacement de S10 vers S51
+[2025-03-20 13:07:38.317] [Bus-Bus-18] [INFO]: ➡️ Bus 18 en route vers S51
+[2025-03-20 13:07:38.332] [Bus-Bus-10] [INFO]: Bus 10: Déplacement de S9 vers S45
+[2025-03-20 13:07:38.333] [Bus-Bus-10] [INFO]: ➡️ Bus 10 en route vers S45
+[2025-03-20 13:07:38.366] [Bus-Bus-13] [INFO]: Bus 13: Déplacement de S10 vers S51
+[2025-03-20 13:07:38.367] [Bus-Bus-13] [INFO]: ➡️ Bus 13 en route vers S51
+[2025-03-20 13:07:38.401] [Bus-Bus-8] [INFO]: Bus 8: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.402] [Bus-Bus-8] [INFO]: ➡️ Bus 8 en route vers S55
+[2025-03-20 13:07:38.411] [Bus-Bus-2] [INFO]: Bus 2: Déplacement de S1 vers S31
+[2025-03-20 13:07:38.412] [Bus-Bus-2] [INFO]: ➡️ Bus 2 en route vers S31
+[2025-03-20 13:07:38.441] [Bus-Bus-32] [INFO]: Bus 32: Déplacement de S0 vers S21
+[2025-03-20 13:07:38.443] [Bus-Bus-26] [INFO]: Bus 26: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.444] [Bus-Bus-32] [INFO]: ➡️ Bus 32 en route vers S21
+[2025-03-20 13:07:38.445] [Bus-Bus-26] [INFO]: ➡️ Bus 26 en route vers S55
+[2025-03-20 13:07:38.487] [Bus-Bus-30] [INFO]: Bus 30: Déplacement de S10 vers S51
+[2025-03-20 13:07:38.487] [Bus-Bus-30] [INFO]: ➡️ Bus 30 en route vers S51
+[2025-03-20 13:07:38.498] [Bus-Bus-16] [INFO]: Bus 16: Déplacement de S13 vers S61
+[2025-03-20 13:07:38.502] [Bus-Bus-16] [INFO]: ➡️ Bus 16 en route vers S61
+[2025-03-20 13:07:38.597] [Bus-Bus-33] [INFO]: Bus 33: Déplacement de S10 vers S51
+[2025-03-20 13:07:38.599] [Bus-Bus-33] [INFO]: ➡️ Bus 33 en route vers S51
+[2025-03-20 13:07:38.708] [Bus-Bus-25] [INFO]: Bus 25: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.708] [Bus-Bus-25] [INFO]: ➡️ Bus 25 en route vers S55
+[2025-03-20 13:07:38.713] [Bus-Bus-6] [INFO]: Bus 6: Déplacement de S5 vers S41
+[2025-03-20 13:07:38.714] [Bus-Bus-6] [INFO]: ➡️ Bus 6 en route vers S41
+[2025-03-20 13:07:38.727] [Bus-Bus-14] [INFO]: Bus 14: Déplacement de S10 vers S51
+[2025-03-20 13:07:38.729] [Bus-Bus-14] [INFO]: ➡️ Bus 14 en route vers S51
+[2025-03-20 13:07:38.746] [Bus-Bus-39] [INFO]: Bus 39: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.747] [Bus-Bus-39] [INFO]: ➡️ Bus 39 en route vers S55
+[2025-03-20 13:07:38.876] [Bus-Bus-38] [INFO]: Bus 38: Déplacement de S16 vers S55
+[2025-03-20 13:07:38.877] [Bus-Bus-38] [INFO]: ➡️ Bus 38 en route vers S55
+[2025-03-20 13:07:38.882] [Bus-Bus-27] [INFO]: Bus 27: Déplacement de S4 vers S34
+[2025-03-20 13:07:38.884] [Bus-Bus-27] [INFO]: ➡️ Bus 27 en route vers S34
+[2025-03-20 13:07:38.911] [Bus-Bus-29] [INFO]: Bus 29: Déplacement de S9 vers S45
+[2025-03-20 13:07:38.913] [Bus-Bus-29] [INFO]: ➡️ Bus 29 en route vers S45
+[2025-03-20 13:07:38.959] [Bus-Bus-15] [INFO]: Bus 15: Déplacement de S0 vers S21
+[2025-03-20 13:07:38.960] [Bus-Bus-15] [INFO]: ➡️ Bus 15 en route vers S21
+[2025-03-20 13:07:39.038] [Bus-Bus-5] [INFO]: Bus 5: Déplacement de S5 vers S41
+[2025-03-20 13:07:39.039] [Bus-Bus-5] [INFO]: ➡️ Bus 5 en route vers S41
+[2025-03-20 13:07:39.155] [Bus-Bus-23] [INFO]: Bus 23: Déplacement de S10 vers S51
+[2025-03-20 13:07:39.157] [Bus-Bus-23] [INFO]: ➡️ Bus 23 en route vers S51
+[2025-03-20 13:07:39.172] [Bus-Bus-36] [INFO]: Bus 36: Déplacement de S5 vers S41
+[2025-03-20 13:07:39.173] [Bus-Bus-36] [INFO]: ➡️ Bus 36 en route vers S41
+[2025-03-20 13:07:39.202] [Bus-Bus-21] [INFO]: Bus 21: Déplacement de S16 vers S55
+[2025-03-20 13:07:39.204] [Bus-Bus-21] [INFO]: ➡️ Bus 21 en route vers S55
+[2025-03-20 13:07:39.326] [Bus-Bus-0] [INFO]: Bus 0: Déplacement de S0 vers S21
+[2025-03-20 13:07:39.328] [Bus-Bus-0] [INFO]: ➡️ Bus 0 en route vers S21
+[2025-03-20 13:07:39.329] [Bus-Bus-35] [INFO]: Bus 35: Déplacement de S5 vers S41
+[2025-03-20 13:07:39.330] [Bus-Bus-35] [INFO]: ➡️ Bus 35 en route vers S41
+[2025-03-20 13:07:39.349] [Bus-Bus-11] [INFO]: Bus 11: Déplacement de S13 vers S61
+[2025-03-20 13:07:39.350] [Bus-Bus-11] [INFO]: ➡️ Bus 11 en route vers S61
