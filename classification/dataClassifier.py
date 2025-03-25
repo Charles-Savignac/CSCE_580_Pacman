@@ -78,9 +78,49 @@ def enhancedFeatureExtractorDigit(datum):
     features =  basicFeatureExtractorDigit(datum)
 
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    
+
+    if getWhitespaceRegionCount(datum) > 1:
+        features['more_than_one_whitespace_region'] = 1
+    else:
+        features['more_than_one_whitespace_region'] = 0
+
 
     return features
+
+def getWhitespaceRegionCount(datum):
+    """
+    We're essentially running DFS
+    """
+
+    pixelMatrix = datum.getPixels()
+    whitespaceRegionCount = 0
+    visited = []
+    for i in range(DIGIT_DATUM_HEIGHT):
+        visited.append([False] * DIGIT_DATUM_WIDTH)
+
+    for i in range(DIGIT_DATUM_HEIGHT):
+        for j in range(DIGIT_DATUM_WIDTH):
+            if visited[i][j] == False and pixelMatrix[i][j] == 0:
+                explore(pixelMatrix, visited, i, j)
+                whitespaceRegionCount += 1
+
+    return whitespaceRegionCount
+
+def explore(pixelMatrix, visited, i, j):
+    visited[i][j] = True
+    if (i-1) in range(DIGIT_DATUM_HEIGHT):
+        if visited[i-1][j] == False and pixelMatrix[i-1][j] == 0:
+            explore(pixelMatrix, visited, i-1, j)
+    if (i+1) in range(DIGIT_DATUM_HEIGHT):
+        if visited[i+1][j] == False and pixelMatrix[i+1][j] == 0:
+            explore(pixelMatrix, visited, i+1, j)
+    if (j-1) in range(DIGIT_DATUM_WIDTH):
+        if visited[i][j-1] == False and pixelMatrix[i][j-1] == 0:
+            explore(pixelMatrix, visited, i, j-1)
+    if (j+1) in range(DIGIT_DATUM_WIDTH):
+        if visited[i][j+1] == False and pixelMatrix[i][j+1] == 0:
+            explore(pixelMatrix, visited, i, j+1)
 
 
 
@@ -389,9 +429,9 @@ def runClassifier(args, options):
 
     # Extract features
     print("Extracting features...")
-    trainingData = map(featureFunction, rawTrainingData)
-    validationData = map(featureFunction, rawValidationData)
-    testData = map(featureFunction, rawTestData)
+    trainingData = list(map(featureFunction, rawTrainingData))
+    validationData = list(map(featureFunction, rawValidationData))
+    testData = list(map(featureFunction, rawTestData))
 
     # Conduct training and testing
     print("Training...")
