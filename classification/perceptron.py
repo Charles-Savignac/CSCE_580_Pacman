@@ -91,6 +91,7 @@ class PerceptronClassifier:
         featuresWeights = []
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
-
+        for i in range(100):
+            featuresWeights.append()
+            
         return featuresWeights
