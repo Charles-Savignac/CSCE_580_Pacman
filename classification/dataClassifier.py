@@ -78,8 +78,8 @@ def enhancedFeatureExtractorDigit(datum):
     features =  basicFeatureExtractorDigit(datum)
 
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
 
+                    
     return features
 
 
@@ -389,9 +389,9 @@ def runClassifier(args, options):
 
     # Extract features
     print("Extracting features...")
-    trainingData = map(featureFunction, rawTrainingData)
-    validationData = map(featureFunction, rawValidationData)
-    testData = map(featureFunction, rawTestData)
+    trainingData = list(map(featureFunction, rawTrainingData))
+    validationData = list(map(featureFunction, rawValidationData))
+    testData = list(map(featureFunction, rawTestData))
 
     # Conduct training and testing
     print("Training...")

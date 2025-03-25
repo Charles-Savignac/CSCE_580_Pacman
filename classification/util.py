@@ -355,8 +355,8 @@ class Counter(dict):
         """
         sortedItems = list(self.items())
 
-        def compare(x, y): return sign(y[1] - x[1])
-        sortedItems.sort(cmp=compare)
+        def compare(x): return x[1]
+        sortedItems.sort(key=compare, reverse=False)
         return [x[0] for x in sortedItems]
 
     def totalCount(self):
