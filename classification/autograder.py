@@ -21,6 +21,9 @@ import re
 import sys
 import projectParams
 import random
+ENCODAGE_UTF8 = 'utf-8'
+ENCODAGE_CP1250 = 'cp1250'
+ENCODAGE_LATIN1 = 'latin1'
 random.seed(0)
 try:
     from pacman import GameState
@@ -337,8 +340,18 @@ def getDisplay(graphicsByDefault, options=None):
     import textDisplay
     return textDisplay.NullGraphics()
 
+def unzipFile(fileName):
+    outputB = sub.check_output('unzip -U ' + fileName, shell=True)
+    try:
+        return outputB.decode(ENCODAGE_UTF8)
+    except UnicodeError:
+        return outputB.decode(ENCODAGE_LATIN1)
 
 if __name__ == '__main__':
+    #unzipFile("layouts.zip")
+    #unzipFile("test_cases.zip")
+    #unzipFile("images.zip")
+    #unzipFile("pacmandata.zip")
     options = readCommand(sys.argv)
     if options.generateSolutions:
         confirmGenerate()

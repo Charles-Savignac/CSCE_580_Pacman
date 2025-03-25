@@ -41,6 +41,7 @@ class MiraClassifier:
     def train(self, trainingData, trainingLabels, validationData, validationLabels):
         "Outside shell to call your method. Do not modify this method."
 
+        trainingData = list(trainingData)
         self.features = trainingData[0].keys() # this could be useful for your code later...
 
         if (self.automaticTuning):

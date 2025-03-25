@@ -67,6 +67,8 @@ class Datum:
         if data == None:
             data = [[' ' for i in range(DATUM_WIDTH)] for j in range(DATUM_HEIGHT)]
         self.pixels = util.arrayInvert(convertToInteger(data))
+        #print(data)
+        #print(self.pixels)
 
     def getPixel(self, column, row):
         """
@@ -107,6 +109,7 @@ def loadDataFile(filename, n,width,height):
     DATUM_WIDTH=width
     DATUM_HEIGHT=height
     fin = readlines(filename)
+    #print(fin)
     fin.reverse()
     items = []
     for i in range(n):
@@ -125,7 +128,10 @@ import os
 def readlines(filename):
     "Opens a file or reads it from the zip archive data.zip"
     if(os.path.exists(filename)):
-        return [l[:-1] for l in open(filename).readlines()]
+        #print([l for l in open(filename).readlines()])
+        #print([l[:-1] for l in open(filename).readlines()])
+        #return [l for l in open(filename).readlines()]
+        return [l[:-1] for l in open(filename, encoding='utf-8').readlines()]
     else:
         with zipfile.ZipFile('data.zip') as z:
             with z.open(filename) as f:
@@ -191,7 +197,7 @@ def convertToInteger(data):
     if type(data) != type([]):
         return IntegerConversionFunction(data)
     else:
-        return map(convertToInteger, data)
+        return list(map(convertToInteger, data))
 
 # Testing
 
