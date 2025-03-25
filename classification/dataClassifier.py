@@ -86,6 +86,7 @@ def enhancedFeatureExtractorDigit(datum):
         features['more_than_one_whitespace_region'] = 0
 
 
+                    
     return features
 
 def getWhitespaceRegionCount(datum):
