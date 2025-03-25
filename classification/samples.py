@@ -135,8 +135,8 @@ def readlines(filename):
     else:
         with zipfile.ZipFile('data.zip') as z:
             with z.open(filename) as f:
-                return [l[:-1] for l in f.readlines()]
-                return f.read().split('\n')
+                a = f.read().decode().split('\n')
+                return a
 
 def loadLabelsFile(filename, n):
     """

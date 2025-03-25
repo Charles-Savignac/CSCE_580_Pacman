@@ -78,52 +78,37 @@ def enhancedFeatureExtractorDigit(datum):
     features =  basicFeatureExtractorDigit(datum)
 
     "*** YOUR CODE HERE ***"
-    
 
-    if getWhitespaceRegionCount(datum) > 1:
-        features['more_than_one_whitespace_region'] = 1
+    pixels = datum.getPixels()
+    WhiteSpaceCount = 0
+    close = set()
+
+    for x in range(DIGIT_DATUM_HEIGHT):
+        for y in range(DIGIT_DATUM_WIDTH):
+            if (x, y) not in close:
+                open = [(x, y)]
+                close.add((x, y))
+
+                while open:
+                    cx, cy = open.pop()
+
+                    for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (-1, 1), (1, -1)]:
+                        nx = cx + dx
+                        ny = cy + dy
+                        
+                        if 0 <= nx < DIGIT_DATUM_HEIGHT and 0 <= ny < DIGIT_DATUM_WIDTH:
+                            if (nx, ny) not in close and pixels[nx][ny] == 0:
+                                close.add((nx, ny))
+                                open.append((nx, ny))
+
+                WhiteSpaceCount += 1
+
+    if WhiteSpaceCount > 1:
+        features['enhancedFeatureExtractorDigit'] = 1
     else:
-        features['more_than_one_whitespace_region'] = 0
+        features['enhancedFeatureExtractorDigit'] = 0
 
-
-                    
     return features
-
-def getWhitespaceRegionCount(datum):
-    """
-    We're essentially running DFS
-    """
-
-    pixelMatrix = datum.getPixels()
-    whitespaceRegionCount = 0
-    visited = []
-    for i in range(DIGIT_DATUM_HEIGHT):
-        visited.append([False] * DIGIT_DATUM_WIDTH)
-
-    for i in range(DIGIT_DATUM_HEIGHT):
-        for j in range(DIGIT_DATUM_WIDTH):
-            if visited[i][j] == False and pixelMatrix[i][j] == 0:
-                explore(pixelMatrix, visited, i, j)
-                whitespaceRegionCount += 1
-
-    return whitespaceRegionCount
-
-def explore(pixelMatrix, visited, i, j):
-    visited[i][j] = True
-    if (i-1) in range(DIGIT_DATUM_HEIGHT):
-        if visited[i-1][j] == False and pixelMatrix[i-1][j] == 0:
-            explore(pixelMatrix, visited, i-1, j)
-    if (i+1) in range(DIGIT_DATUM_HEIGHT):
-        if visited[i+1][j] == False and pixelMatrix[i+1][j] == 0:
-            explore(pixelMatrix, visited, i+1, j)
-    if (j-1) in range(DIGIT_DATUM_WIDTH):
-        if visited[i][j-1] == False and pixelMatrix[i][j-1] == 0:
-            explore(pixelMatrix, visited, i, j-1)
-    if (j+1) in range(DIGIT_DATUM_WIDTH):
-        if visited[i][j+1] == False and pixelMatrix[i][j+1] == 0:
-            explore(pixelMatrix, visited, i, j+1)
-
-
 
 def basicFeatureExtractorPacman(state):
     """
