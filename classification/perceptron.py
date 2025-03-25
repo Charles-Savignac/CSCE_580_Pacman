@@ -91,7 +91,17 @@ class PerceptronClassifier:
         featuresWeights = []
 
         "*** YOUR CODE HERE ***"
+        def sort(counter):
+            sortedItems = sorted(counter.items(), key=lambda x: x[1], reverse=True)
+        
+        
+            return [x[0] for x in sortedItems]
+    
+
+        listKey=sort(self.weights.get(label))
+
         for i in range(100):
-            featuresWeights.append()
+            featuresWeights.append(listKey[i])
+
             
         return featuresWeights
