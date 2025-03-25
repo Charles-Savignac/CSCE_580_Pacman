@@ -85,14 +85,15 @@ def enhancedFeatureExtractorDigit(datum):
 
     for x in range(DIGIT_DATUM_HEIGHT):
         for y in range(DIGIT_DATUM_WIDTH):
-            if (x, y) not in close:
+            
+            if (x, y) not in close and pixels[x][y] == 0:
                 open = [(x, y)]
                 close.add((x, y))
 
                 while open:
                     cx, cy = open.pop()
 
-                    for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (-1, 1), (1, -1)]:
+                    for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
                         nx = cx + dx
                         ny = cy + dy
                         
@@ -100,10 +101,12 @@ def enhancedFeatureExtractorDigit(datum):
                             if (nx, ny) not in close and pixels[nx][ny] == 0:
                                 close.add((nx, ny))
                                 open.append((nx, ny))
-
+                
                 WhiteSpaceCount += 1
-
-    if WhiteSpaceCount > 1:
+               
+   
+    
+    if  WhiteSpaceCount > 1:
         features['enhancedFeatureExtractorDigit'] = 1
     else:
         features['enhancedFeatureExtractorDigit'] = 0
