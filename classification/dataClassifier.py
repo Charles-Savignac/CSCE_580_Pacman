@@ -76,7 +76,6 @@ def enhancedFeatureExtractorDigit(datum):
     ##
     """
     features =  basicFeatureExtractorDigit(datum)
-
     "*** YOUR CODE HERE ***"
 
     pixels = datum.getPixels()
@@ -104,8 +103,6 @@ def enhancedFeatureExtractorDigit(datum):
                                 open.push((nx, ny))
                 
                 WhiteSpaceCount += 1
-               
-   
     
     if  WhiteSpaceCount > 1:
         features['enhancedFeatureExtractorDigit'] = 1
