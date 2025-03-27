@@ -55,6 +55,6 @@ class PerceptronClassifierPacman(PerceptronClassifier):
                 yPrime = self.classify([datum])[0]
                 y = trainingLabels[i]
 
-                if y is not yPrime:
-                    self.weights[y] += datum[0][y]
-                    self.weights[yPrime] -=  datum[0][yPrime]
+                if yPrime != y:
+                    self.weights += datum[0][y]
+                    self.weights -= datum[0][yPrime]
