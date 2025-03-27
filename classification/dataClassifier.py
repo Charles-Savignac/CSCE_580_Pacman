@@ -104,10 +104,7 @@ def enhancedFeatureExtractorDigit(datum):
                 
                 WhiteSpaceCount += 1
     
-    if  WhiteSpaceCount > 1:
-        features['enhancedFeatureExtractorDigit'] = 1
-    else:
-        features['enhancedFeatureExtractorDigit'] = 0
+        features['enhancedFeatureExtractorDigit'] = 1 if WhiteSpaceCount > 1 else 0
 
     return features
 
