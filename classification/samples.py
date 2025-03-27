@@ -151,10 +151,12 @@ def loadLabelsFile(filename, n):
     return labels
 
 def loadPacmanStatesFile(filename, n):
+
     with open(filename, 'rb') as f:
         result = pickle.load(f, encoding="utf-8")
         f.close()
     return result
+   
 
 import pickle
 import pacmanAgents

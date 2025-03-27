@@ -82,15 +82,16 @@ def enhancedFeatureExtractorDigit(datum):
     pixels = datum.getPixels()
     WhiteSpaceCount = 0
     close = set()
+    open=util.Queue()
 
     for x in range(DIGIT_DATUM_HEIGHT):
         for y in range(DIGIT_DATUM_WIDTH):
             
             if (x, y) not in close and pixels[x][y] == 0:
-                open = [(x, y)]
+                open.push((x, y))
                 close.add((x, y))
 
-                while open:
+                while not open.isEmpty():
                     cx, cy = open.pop()
 
                     for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
@@ -100,7 +101,7 @@ def enhancedFeatureExtractorDigit(datum):
                         if 0 <= nx < DIGIT_DATUM_HEIGHT and 0 <= ny < DIGIT_DATUM_WIDTH:
                             if (nx, ny) not in close and pixels[nx][ny] == 0:
                                 close.add((nx, ny))
-                                open.append((nx, ny))
+                                open.push((nx, ny))
                 
                 WhiteSpaceCount += 1
                
