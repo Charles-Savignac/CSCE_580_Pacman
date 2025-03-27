@@ -77,7 +77,7 @@ def enhancedFeatureExtractorDigit(datum):
     """
     features =  basicFeatureExtractorDigit(datum)
     "*** YOUR CODE HERE ***"
-
+    return features
     pixels = datum.getPixels()
     WhiteSpaceCount = 0
     close = set()
@@ -148,7 +148,11 @@ def enhancedPacmanFeatures(state, action):
     """
     features = util.Counter()
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    if action=='Stop':
+        features['agentStop']=1
+    else:
+        features['agentStop']=0
+
     return features
 
 
