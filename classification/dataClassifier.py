@@ -147,11 +147,32 @@ def enhancedPacmanFeatures(state, action):
     It should return a counter with { <feature name> : <feature value>, ... }
     """
     features = util.Counter()
+
+    
     "*** YOUR CODE HERE ***"
-    if action=='Stop':
-        features['agentStop']=1
-    else:
-        features['agentStop']=0
+    pacman = state.getPacmanPosition()
+
+    foods = state.getFood().asList()
+    ghosts = state.getGhostPositions()
+    capsules = state.getCapsules()
+
+    foodDistance = float("inf")
+    ghostDistance = float("inf")
+    capsuleDistance = float("inf")
+
+    for food in foods:
+        foodDistance = min(foodDistance, util.manhattanDistance(pacman, food))
+
+    for ghost in ghosts:
+        ghostDistance = min(ghostDistance, util.manhattanDistance(pacman, ghost))
+
+    for capsule in capsules:
+        capsuleDistance = min(capsuleDistance, util.manhattanDistance(pacman, capsule))
+
+    features['StopeAgent'] = 1 if action == 'Stop' else 0
+    features['FoodAgent'] = 1/foodDistance
+    features['SuicideAgent'] = 1/ghostDistance
+    #features['ContestAgent'] = 1/capsuleDistance + foodDistance - ghostDistance
 
     return features
 
