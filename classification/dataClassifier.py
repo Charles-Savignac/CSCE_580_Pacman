@@ -77,7 +77,6 @@ def enhancedFeatureExtractorDigit(datum):
     """
     features =  basicFeatureExtractorDigit(datum)
     "*** YOUR CODE HERE ***"
-    return features
     pixels = datum.getPixels()
     WhiteSpaceCount = 0
     close = set()
@@ -150,13 +149,13 @@ def enhancedPacmanFeatures(state, action):
 
     
     "*** YOUR CODE HERE ***"
-    pacman = state.getPacmanPosition()
-    stateFuture=state.generatePacmanSuccessor( action)
+    stateFuture=state.generatePacmanSuccessor(action)
     pacFuture=stateFuture.getPacmanPosition()
 
-    foods = state.getFood().asList()
-    ghosts = state.getGhostPositions()
-    capsules = state.getCapsules()
+    foods = stateFuture.getFood().asList()
+    foodleft = stateFuture.getNumFood()
+    ghosts = stateFuture.getGhostPositions()
+    capsules = stateFuture.getCapsules()
 
     foodDistance = float("inf")
     ghostDistance = float("inf")
@@ -171,10 +170,11 @@ def enhancedPacmanFeatures(state, action):
     for capsule in capsules:
         capsuleDistance = min(capsuleDistance, util.manhattanDistance(pacFuture, capsule))
 
-    features['StopAgent'] = 1 if action == 'Stop' else 0
-    features['FoodAgent'] = 1/(foodDistance+1)
-    features['SuicideAgent'] = 1/(ghostDistance+1)
-    features['ContestAgent'] = 1/(capsuleDistance +1)+1/(foodDistance +1)+1/(ghostDistance+1)
+    features['Stop'] = 1 if action == 'Stop' else 0
+    features['FoodDistance'] = 1/(foodDistance+1)
+    features['FoodLeft'] = 1/(foodleft+1)
+    features['GhostDistance'] = 1/(ghostDistance+1)
+    features['BS'] = 1/(capsuleDistance +1) + 1/(foodDistance +1) + 1/(ghostDistance+1)
 
     return features
 
