@@ -151,6 +151,8 @@ def enhancedPacmanFeatures(state, action):
     
     "*** YOUR CODE HERE ***"
     pacman = state.getPacmanPosition()
+    stateFuture=state.generatePacmanSuccessor( action)
+    pacFuture=stateFuture.getPacmanPosition()
 
     foods = state.getFood().asList()
     ghosts = state.getGhostPositions()
@@ -161,18 +163,18 @@ def enhancedPacmanFeatures(state, action):
     capsuleDistance = float("inf")
 
     for food in foods:
-        foodDistance = min(foodDistance, util.manhattanDistance(pacman, food))
+        foodDistance = min(foodDistance, util.manhattanDistance(pacFuture, food))
 
     for ghost in ghosts:
-        ghostDistance = min(ghostDistance, util.manhattanDistance(pacman, ghost))
+        ghostDistance = min(ghostDistance, util.manhattanDistance(pacFuture, ghost))
 
     for capsule in capsules:
-        capsuleDistance = min(capsuleDistance, util.manhattanDistance(pacman, capsule))
+        capsuleDistance = min(capsuleDistance, util.manhattanDistance(pacFuture, capsule))
 
-    features['StopeAgent'] = 1 if action == 'Stop' else 0
-    features['FoodAgent'] = 1/foodDistance
-    features['SuicideAgent'] = 1/ghostDistance
-    #features['ContestAgent'] = 1/capsuleDistance + foodDistance - ghostDistance
+    features['StopAgent'] = 1 if action == 'Stop' else 0
+    features['FoodAgent'] = 1/(foodDistance+1)
+    features['SuicideAgent'] = 1/(ghostDistance+1)
+    features['ContestAgent'] = 1/(capsuleDistance +1)+1/(foodDistance +1)+1/(ghostDistance+1)
 
     return features
 
